@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Second_Schedule">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/abel"
+                android:text="Price Scheduler"
+                android:textColor="@color/newTrailColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/new_trail_color_box"
+                android:fontFamily="@font/abel"
+                android:text="Amazon"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header">
+
+            <RelativeLayout
+                android:id="@+id/header_io22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/schedulePrice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hollow"
+                    android:hint="Enter the Timer Value.."
+                    android:padding="10dp"
+                    android:textColor="@color/purple_700"
+                    android:textColorHint="@color/teal_200" />
+
+                <Button
+                    android:id="@+id/done2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/dark"
+                    android:padding="10dp"
+                    android:text="DONE"
+                    android:textColor="@color/white"
+
+
+                    ></Button>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header_io22"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/box"
+                android:elevation="2dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:fontFamily="@font/abel"
+
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="8dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Statusuyguyguguyhyi878j78787hi878i7yythbytbytytytytyutu"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mid_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/abel"
+                android:padding="5dp"
+                android:text="To never Miss Your amazing products discounts schedule Now"
+                android:textColor="@color/teal_200"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:visibility="visible"></TextView>
+
+            <LinearLayout
+                android:id="@+id/search_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid_header"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:cursorVisible="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toLeftOf="@+id/getBtn"
+                        android:background="@drawable/whiteback"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/abel"
+                        android:hint="Paste Here Link of Product.."
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/teal_200"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/getBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yellow"
+                        android:drawableTint="@color/white"
+                        android:elevation="5dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_search_24"
+                        android:text="search with url"
+
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/new_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mid_two"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Top Deals"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_deals"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_pager"
+            android:orientation="horizontal"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:layout_below="@id/new_mid" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

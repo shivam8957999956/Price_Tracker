@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/current_tracking"
+            android:icon="@drawable/ic_baseline_auto_graph_24"
+            android:iconTint="@color/darkYellow"
+            
+            android:title="Current Tracking" />
+
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="Search History" />
+
+
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/about_us"
+                    android:icon="@drawable/ic_baseline_info_24"
+                    android:title="About us" />
+                <item
+                    android:id="@+id/menu_share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share App" />
+
+            </group>
+
+
+        </menu>
+
+
+    </item>
+</menu>
